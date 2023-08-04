@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <title>Validador de CPF</title>
+</head>
+<body>
+
+  <div class="container">
+    <img src="./images/naruto.jpg" width="400" />
+    <div>
+      <label>Nome</label>
+      <input type="text" id="name" class="name" autocomplete="off">
+    </div>
+    <div>
+      <label>Idade</label>
+      <input type="text" id="age" class="age" autocomplete="off">
+    </div>
+    <button onclick="validarNameDoInput()">VERIFICAR Idade</button>
+    <div class="resultado">
+      <p class="error"></p>
+      <p id="valueName"></p>
+      <p id="valueIdade"></p>
+      <p id="value"></p>
+      <img id="îmage_resultado" width="400" />
+    </div>
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+<script src="./mask.js"></script>
+<script src="./script.js"></script>
+</html>
